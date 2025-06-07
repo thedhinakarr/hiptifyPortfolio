@@ -6,11 +6,11 @@ const Footer = () => {
     <footer className="bg-blue-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Logo and Social Icons */}
-        <div className="flex justify-between items-start mb-16">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16">
           <div>
             <div className="mb-8">
-              <span className="text-white font-bold text-3xl">HIPTIFY</span>
-              <span className="text-s ml-0.5">®</span>
+              <span className="text-white font-bold text-xl">HIPTIFY</span>
+              <span className="text-xs ml-0.5">®</span>
             </div>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-blue-200 transition-colors">
@@ -45,8 +45,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Main Navigation Sections - Horizontal Layout */}
-        <div className="grid grid-cols-4 gap-20 mb-16">
+        {/* Main Navigation Sections - Responsive Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-20 mb-16">
           {/* Services */}
           <div>
             <h4 className="font-bold text-white mb-6 text-sm uppercase tracking-wide">SERVICES</h4>
@@ -96,7 +96,7 @@ const Footer = () => {
 
         {/* Contact Information */}
         <div className="border-t border-blue-800 pt-8 mb-8">
-          <div className="flex items-center space-x-8">
+          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2">
               <svg className="w-4 h-4 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -114,7 +114,7 @@ const Footer = () => {
 
         {/* Bottom Links and Copyright */}
         <div className="border-t border-blue-800 pt-8">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-4 lg:space-y-0">
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
               <Link to="/accessibility" className="text-blue-200 hover:text-white transition-colors">Accessibility</Link>
               <Link to="/legal" className="text-blue-200 hover:text-white transition-colors">Legal</Link>
